@@ -26,7 +26,7 @@ class Site extends MY_Controller {
         $this->template->write_view('content', 'coba/hallo', $data, TRUE);
         $this->template->render();
     }
-    
+
     function coba() {
       $this->template->write('title', 'Porta\'l', TRUE);
         $data = array(
