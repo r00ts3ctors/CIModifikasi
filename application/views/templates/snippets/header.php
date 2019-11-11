@@ -53,6 +53,12 @@
       </div>
     </li>
     <li class="nav-item">
+      <a class="nav-link" href="<?php echo base_url('Member/RegisterRTIK/add') ?>">
+      <i class="mdi mdi-puzzle menu-icon"></i>
+      <span class="menu-title">Register RTIK</span>
+      </a>
+    </li>
+    <li class="nav-item">
       <a class="nav-link" href="#">
       <i class="mdi mdi-puzzle menu-icon"></i>
       <span class="menu-title">Sebar Informasi</span>

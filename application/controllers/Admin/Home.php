@@ -6,7 +6,7 @@ class Home extends MY_Controller{
   public function __construct()
   {
     parent::__construct();
-
+    $this->load->model('Modelhomeadmin');
   }
 
   function index()
@@ -14,6 +14,11 @@ class Home extends MY_Controller{
     $data = array(
     'menuatas' => 'templates/snippets/menuatas',
     'panel' => 'templates/snippets/panel',
+    'total' => array(
+        'petugas' => $this->Modelhomeadmin->total('tbl_petugas'),
+        'kegiatan' => $this->Modelhomeadmin->total('tbl_kegiatan'),
+        'laporan' => '1',
+      ),
     );
 
     // $this->template->add_js('assets/coba.js');
@@ -23,7 +28,7 @@ class Home extends MY_Controller{
     $this->template->render();
 
   }
-  
+
 
 }
 

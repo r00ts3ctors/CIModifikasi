@@ -57,7 +57,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="d-flex flex-wrap align-items-baseline">
-              <h2 class="mr-3">1 </h2>
+              <h2 class="mr-3"><?php echo $total['petugas']; ?></h2>
               <h3 class="text-success">Orang</h3>
             </div>
           </div>
@@ -74,7 +74,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="d-flex flex-wrap align-items-baseline">
-              <h2 class="mr-3">1 </h2>
+              <h2 class="mr-3"><?php echo $total['kegiatan']; ?></h2>
               <h3 class="text-success">Kegiatan</h3>
             </div>
           </div>

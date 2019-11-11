@@ -7,14 +7,18 @@ class Home extends MY_Controller{
   {
     parent::__construct();
     //Codeigniter : Write Less Do More
+    $this->load->model('Modelhomeadmin');
   }
+
+
 
   function index()
   {
-
     $data = array(
       'menuatas' => 'templates/snippets/menuatas',
       'panel' => 'templates/snippets/panel',
+      // 'nilai' => $this->Modelhomeadmin->totalPetugas(),
+
     );
 
 

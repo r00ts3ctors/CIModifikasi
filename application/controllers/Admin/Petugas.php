@@ -18,7 +18,7 @@ class Petugas extends MY_Controller{
     );
     // $this->template->add_js('assets/coba.js');
     // $this->template->add_css('assets/css/page.css');
-    // $this->template->write('title', 'Portal Informasi Fakrullah Maulana', TRUE);
+    $this->template->write('title', 'Portal Informasi Fakrullah Maulana', TRUE);
     $this->template->write_view('content', 'Admin/vPetugas', $data, TRUE);
     $this->template->render();
   }
@@ -46,7 +46,8 @@ class Petugas extends MY_Controller{
 
 
   // IDEA: Proses tambah petugas
-  public function addPetugas($value='') {
+  public function addPetugas()
+  {
     $this->_rules();
     if ($this->form_validation->run() === false) {
        $this->index();
@@ -68,6 +69,15 @@ class Petugas extends MY_Controller{
     }
   }
 
+  public function editPetugas()
+  {
+    // code...
+  }
+
+  public function updatePetugas()
+  {
+    // code...
+  }
 
   public function _rules()
   {
